@@ -17,7 +17,13 @@ $router->group([
 ], function() {
     resource('/admin/post', 'PostController');
     resource('/admin/tag', 'TagController', ['except' => 'show']);
+    
+    // upload manager
     get('/admin/upload', 'UploadController@index');
+    post('admin/upload/file', 'UploadController@uploadFile');
+    delete('admin/upload/file', 'UploadController@deleteFile');
+    post('admin/upload/folder', 'UploadController@createFolder');
+    delete('admin/upload/folder', 'UploadController@deleteFolder');
 });
 
 // Logging in and out
