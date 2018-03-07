@@ -26,7 +26,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand">{{ config('blog.title') }} - Admin</a>
+                <a href="#" class="navbar-brand">{{ config('blog.title') }} Admin</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-menu">
                 @include('admin.partials.navbar')
@@ -36,7 +36,7 @@
 
     @yield('content')
 
-    <script src="assets/js/admin.js"></script>
+    <script src="/assets/js/admin.js"></script>
     @yield('scripts')
 
 </body>
