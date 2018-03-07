@@ -15,12 +15,12 @@ $router->group([
     'namespace' => 'Admin',
     'middleware' => 'auth'
 ], function() {
-    resource('admin/post', 'PostController');
-    resource('admin/tag', 'TagController');
-    get('admin/upload', 'UploadController@index');
+    resource('/admin/post', 'PostController');
+    resource('/admin/tag', 'TagController');
+    get('/admin/upload', 'UploadController@index');
 });
 
 // Logging in and out
-get('/login', 'Auth\AuthController@getLogin');
-post('/login', 'Auth\AuthController@postLogin');
-get('logout', 'Auth\AuthController@getLogout');
+get('/auth/login', 'Auth\AuthController@getLogin');
+post('/auth/login', 'Auth\AuthController@postLogin');
+get('/auth/logout', 'Auth\AuthController@getLogout');
