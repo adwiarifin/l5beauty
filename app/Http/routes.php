@@ -15,7 +15,7 @@ $router->group([
     'namespace' => 'Admin',
     'middleware' => 'auth'
 ], function() {
-    resource('/admin/post', 'PostController');
+    resource('/admin/post', 'PostController', ['except' => 'show']);
     resource('/admin/tag', 'TagController', ['except' => 'show']);
     
     // upload manager
