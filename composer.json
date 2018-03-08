@@ -11,7 +11,8 @@
         "michelf/php-smartypants": "^1.8",
         "dflydev/apache-mime-types": "^1.0",
         "doctrine/dbal": "^2.6",
-        "guzzlehttp/guzzle": "~5.0"
+        "guzzlehttp/guzzle": "~5.0",
+        "suin/php-rss-writer": "^1.6"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

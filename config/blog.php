@@ -8,6 +8,7 @@ return [
     'contact_email' => 'adwi@kesatriakeyboard.com',
     'page_image' => 'home-bg.jpg',
     'post_per_page' => 10,
+    'rss_size' => 25,
     'uploads' => [
         'storage' => 'local',
         'webpath' => '/uploads/',

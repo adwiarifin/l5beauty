@@ -8,6 +8,8 @@ get('blog', 'BlogController@index');
 get('blog/{slug}', 'BlogController@showPost');
 get('contact', 'ContactController@showForm');
 post('contact', 'ContactController@sendContactInfo');
+get('rss', 'BlogController@rss');
+get('sitemap.xml', 'BlogController@siteMap');
 
 // Admin area
 get('admin', function() {

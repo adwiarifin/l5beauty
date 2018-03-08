@@ -9,6 +9,10 @@
 
   <title>{{ $title or config('blog.title') }}</title>
 
+  {{-- RSS Feed --}}
+  <link rel="alternate" type="application/rss+xml" href="{{ url('rss') }}"
+        title="RSS Feed {{ config('blog.title') }}">
+
   {{-- Styles --}}
   <link href="/assets/css/blog.css" rel="stylesheet">
   @yield('styles')
