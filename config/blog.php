@@ -4,7 +4,8 @@ return [
     'title' => 'Laravel 5.1 Beauty',
     'subtitle' => 'A clean blog written in Laravel 5.1',
     'description' => 'This is my meta description',
-    'author' => 'Chuck Heintzelman',
+    'author' => 'Adwi Arifin',
+    'contact_email' => 'adwi@kesatriakeyboard.com',
     'page_image' => 'home-bg.jpg',
     'post_per_page' => 10,
     'uploads' => [

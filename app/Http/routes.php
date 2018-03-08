@@ -5,7 +5,9 @@ get('/', function () {
     return redirect('/blog');
 });
 get('blog', 'BlogController@index');
-get('blog/{slug}', 'BlogCOntroller@showPost');
+get('blog/{slug}', 'BlogController@showPost');
+get('contact', 'ContactController@showForm');
+post('contact', 'ContactController@sendContactInfo');
 
 // Admin area
 get('admin', function() {
